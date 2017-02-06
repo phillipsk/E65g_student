@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
-    <device id="retina3_5" orientation="landscape">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -8,6 +8,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -21,11 +22,11 @@
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OEO-rj-XKj" userLabel="Assignment1Q2">
-                                <rect key="frame" x="129" y="49" width="222" height="222"/>
+                                <rect key="frame" x="0.0" y="146" width="375" height="375"/>
                                 <color key="backgroundColor" red="0.0" green="0.17730685401944435" blue="0.98660589917777763" alpha="0.14340753424657535" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -58,21 +59,29 @@
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="276-y5-Uc4">
-                                <rect key="frame" x="60" y="350" width="360" height="0.0"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="0.3476291232638889" green="1" blue="0.71248372395833337" alpha="0.44820205479452052" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cNl-jn-f4g">
-                                <rect key="frame" x="60" y="38" width="360" height="0.0"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cNl-jn-f4g" userLabel="BlueView">
+                                <rect key="frame" x="16" y="38" width="343" height="333.5"/>
                                 <color key="backgroundColor" red="0.0" green="0.74270290798611116" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="276-y5-Uc4" userLabel="GreenView">
+                                <rect key="frame" x="16" y="372" width="343" height="246"/>
+                                <color key="backgroundColor" red="0.3476291232638889" green="1" blue="0.71248372395833337" alpha="0.44820205479452052" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cNl-jn-f4g" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="KnQ-r6-kmR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cNl-jn-f4g" secondAttribute="trailing" id="Zdx-lW-4Ev"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="276-y5-Uc4" secondAttribute="bottom" id="bqr-aN-IJZ"/>
+                            <constraint firstItem="276-y5-Uc4" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="cKx-8a-egt"/>
+                            <constraint firstItem="cNl-jn-f4g" firstAttribute="height" secondItem="QS5-Rx-YEW" secondAttribute="height" multiplier="0.5" id="heO-FV-OWL"/>
+                            <constraint firstItem="cNl-jn-f4g" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="18" id="koR-96-VON"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="276-y5-Uc4" secondAttribute="trailing" id="uOs-ga-QlK"/>
+                            <constraint firstItem="276-y5-Uc4" firstAttribute="top" secondItem="cNl-jn-f4g" secondAttribute="bottom" id="yo3-GT-Ca1"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
                 </viewController>
