@@ -68,6 +68,12 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cNl-jn-f4g" userLabel="BlueView">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="333.66666666666669"/>
                                         <color key="backgroundColor" red="0.0" green="0.74270290798611116" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="276-y5-Uc4" userLabel="GreenView">
                                         <rect key="frame" x="0.0" y="334" width="374" height="333"/>
