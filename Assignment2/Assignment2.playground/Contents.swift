@@ -187,7 +187,7 @@ func map2<T>(_ rows: Int, _ cols: Int, transform: (Int, Int) -> T) -> [[T]] {
  **Your answer may be no more than one sentence.**
 */
 // ** Your Problem 5 comment goes here! **
-/*
+/*  Computed Type Property
  
  */
 /*:
@@ -230,16 +230,24 @@ struct Grid {
     ]
     
     // ** Your Problem 6 code goes here! Change the following two lines **
-    var rows: Int = 0
-    var cols: Int = 0
+    var rows: Int = 10
+    var cols: Int = 10
     var cells: [[Cell]] = [[Cell]]()
     
     init(_ rows: Int,
          _ cols: Int,
-         cellInitializer: (Int, Int) -> CellState = { _,_ in .empty } ) {
+         cellInitializer: (Int, Int) -> CellState = { _,_ in .empty } ){
         // ** Your Problem 7 code goes here! **
+        self.rows = rows
+        self.cols = cols
+//        [[Cell]](repeatElement([Cell](repeatElement ...))
+        cells = [[Cell]](repeatElement([Cell],(repeatElement([Cell], count: cols), count: rows))
+
         map2(rows, cols) { row, col in
             // ** Your Problem 8 code goes here! **
+            Cell.init(position: (row, col), state: cellInitializer)
+            
+            
         }
     }
 }
