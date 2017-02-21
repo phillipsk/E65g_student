@@ -101,12 +101,24 @@ typealias Position = (row: Int, col: Int)
 enum CellState {
     // ** Your Problem 2 code goes here! Replace the contents of CellState **
     //  This shell code is here so that at all times the playground compiles and runs
-    case empty
+    case empty, alive, born, died
     
+
     var isAlive: Bool {
-        return false
+        switch self {
+        case .alive, .born:
+            return true
+        default:
+            return false
+        }
     }
 }
+
+//Testing Code
+CellState.alive.isAlive
+CellState.died.isAlive
+CellState.alive
+
 /*:
  ## Problem 3:
  In the struct Cell below:
@@ -117,9 +129,10 @@ enum CellState {
 // A struct representing a Cell in Conway's Game of Life
 struct Cell {
     // ** Your Problem 3 code goes here! replace the following two lines **
-    var position: Position
+    var position = (0,0)
     var state: CellState
 }
+
 /*:
  ## Problem 4:
  I am providing the following function, `map2` immediately below.
@@ -128,28 +141,28 @@ struct Cell {
  1. what do the `_` characters do?
  */
 // ** Your Problem 4.1 answer goes here **
-/*
+/*  _ = ignores argument labels
  
  */
 /*:
  2. what is the type of the `transform` variable?
  */
 // ** Your Problem 4.2 answer goes here **
-/*
+/*  (Int, Int)
  
  */
 /*:
  3. what is the return type of `map2`?
  */
 // ** Your Problem 4.3 answer goes here **
-/*
+/*      generic type, implicitly type (Int, Int) if the function were leftalone with transform as the way it is
  
  */
 /*:
  4. what is `T` in this declaration?
  */
 // ** Your Problem 4.4 answer goes here **
-/*
+/* T represents a generic type that will allow for paramater swappings of the same type
  
  */
 // A function which is like the standard map function but
