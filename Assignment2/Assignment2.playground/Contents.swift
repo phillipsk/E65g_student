@@ -287,15 +287,18 @@ struct Grid {
  */
 // ** your problem 10.1 answer goes here.
 /*
- 
+    When refering to an incremented element of an array
  */
 /*:
  2. Explain in one sentence when you would use the word `cell` in relation to this function
  */
 // ** your problem 10.2 answer goes here.
 /*
+ An externally named parameter. The extenal name appears before the local name.
  
  */
+
+
 // An extension of Grid to add a function for computing the positions
 // of the 8 neighboring cells of a given cell
 extension Grid {
@@ -304,10 +307,15 @@ extension Grid {
     func neighbors(of cell: Cell) -> [Position] {
         return Grid.offsets.map {
             // ** Your Problem 9 Code goes here! replace the following line **
+            guard let neighborCell = self[$1.row, $1.col] else {
+                return $0
+            }
+            neighborCell
             return Position(row: $0, col: $1)
         }
     }
 }
+
 /*:
  ## Problem 11:
  I am providing the following function, reduce2. Answer the following questions
