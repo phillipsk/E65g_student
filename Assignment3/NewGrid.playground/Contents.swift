@@ -1,9 +1,3 @@
-//
-//  Assignment3
-//
-//  Received help from Andrea Salkey.
-//  Created by Kevin Phillips on 3/26/17.
-
 import Foundation
 
 public typealias Position = (row: Int, col: Int)
@@ -25,42 +19,13 @@ public func positionSequence (from: Position, to: Position) -> PositionSequence 
         .flatMap { $0 }
 }
 
-public enum CellState : String {
-    case alive = "alive"
-    case empty="empty"
-    case born="born"
-    case died="died"
+public enum CellState {
+    case alive, empty, born, died
     
     public var isAlive: Bool {
         switch self {
         case .alive, .born: return true
         default: return false
-        }
-    }
-    
-    public func description() -> String {
-        switch self {
-        case .alive:
-            return CellState.alive.rawValue
-        case .empty:
-            return CellState.empty.rawValue
-        case .born:
-            return CellState.born.rawValue
-        case .died:
-            return CellState.died.rawValue
-        }
-    }
-    
-    public func allValues() -> [CellState] {
-        return [.alive, .born, .died, .empty]
-    }
-    
-    public func toggle(value:CellState)-> CellState {
-        switch value{
-        case .empty,.died:
-            return .alive
-        case .alive,.born:
-            return .empty
         }
     }
 }
@@ -138,15 +103,8 @@ public extension Grid {
 extension Grid: Sequence {
     public struct SimpleGridIterator: IteratorProtocol {
         private var grid: Grid
-        
-        public init(grid: Grid) {
-            self.grid = grid
-        }
-        
-        public mutating func next() -> Grid? {
-            grid = grid.next()
-            return grid
-        }
+        public init(grid: Grid) { self.grid = grid }
+        public mutating func next() -> Grid? { return grid.next() }
     }
     
     public struct HistoricGridIterator: IteratorProtocol {
@@ -195,10 +153,24 @@ extension Grid: Sequence {
     }
 }
 
+
+/*
+ Testing
+ */
+var grid = Grid(10, 10) { _,_ in arc4random_uniform(3) == 2 ? .alive : .empty }
+print ("\(grid.living.count)\n\n\(grid.description)\n\n\n\n\n\n")
+
 func gliderInitializer(row: Int, col: Int) -> CellState {
     switch (row, col) {
     case (0, 1), (1, 2), (2, 0), (2, 1), (2, 2): return .alive
     default: return .empty
     }
 }
+
+grid = Grid(5, 5, cellInitializer: gliderInitializer)
+print (grid.description)
+
+for nextGrid in grid { print ("\(nextGrid.description)\n") }
+
+let theEnd = "The End"
 

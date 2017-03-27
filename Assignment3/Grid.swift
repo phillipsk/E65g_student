@@ -1,9 +1,3 @@
-//
-//  Assignment3
-//
-//  Received help from Andrea Salkey.
-//  Created by Kevin Phillips on 3/26/17.
-
 import Foundation
 
 public typealias Position = (row: Int, col: Int)
