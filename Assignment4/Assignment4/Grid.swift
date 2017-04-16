@@ -1,6 +1,7 @@
-//
-//  Grid.swift
-//
+
+
+import Foundation
+
 public typealias GridPosition = (row: Int, col: Int)
 public typealias GridSize = (rows: Int, cols: Int)
 
@@ -13,6 +14,15 @@ public enum CellState {
         switch self {
         case .alive, .born: return true
         default: return false
+        }
+    }
+    
+    public func toggle(value: CellState) -> CellState {
+        switch value {
+        case .empty, .died:
+            return .alive
+        case .alive, .born:
+            return .empty
         }
     }
 }
@@ -74,7 +84,9 @@ public struct Grid: GridProtocol {
 
     public subscript (row: Int, col: Int) -> CellState {
         get { return _cells[norm(row, to: size.rows)][norm(col, to: size.cols)] }
-        set { _cells[norm(row, to: size.rows)][norm(col, to: size.cols)] = newValue }
+        set {
+            _cells[norm(row, to: size.rows)][norm(col, to: size.cols)] = newValue
+        }
     }
     
     public init(_ rows: Int, _ cols: Int, cellInitializer: (GridPosition) -> CellState = { _, _ in .empty }) {
