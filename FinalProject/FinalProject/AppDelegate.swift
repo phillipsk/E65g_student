@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  FinalProject
-//
-//  Created by Van Simmons on 1/15/17.
-//  Copyright © 2017 Harvard Division of Continuing Education. All rights reserved.
-//
 
 import UIKit
 
@@ -12,10 +5,17 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        Configurations.sharedConfigurations.initialfetchConfigurations()
+        let defaults = UserDefaults.standard
+        
+        if let lastSavedConfiguration = defaults.object(forKey: "lastSavedConfiguration") as? NSDictionary {
+            Configurations.sharedConfigurations.addConfiguration(lastSavedConfiguration)
+            let grid = Configurations.contentsToGrid(lastSavedConfiguration["contents"] as! [[Int]])
+            StandardEngine.sharedEngine.updateGrid(grid)
+        }
+        
         return true
     }
 

@@ -7,22 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841C637A1EB95B93003C8910 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841C63791EB95B93003C8910 /* Main.storyboard */; };
+		841C637C1EB95BBC003C8910 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 841C637B1EB95BBC003C8910 /* Assets.xcassets */; };
+		841C637E1EB95BCD003C8910 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841C637D1EB95BCD003C8910 /* LaunchScreen.storyboard */; };
+		841C63851EB95BF6003C8910 /* Engine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841C637F1EB95BF6003C8910 /* Engine.swift */; };
+		841C63861EB95BF6003C8910 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841C63801EB95BF6003C8910 /* Grid.swift */; };
+		841C63871EB95BF6003C8910 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841C63811EB95BF6003C8910 /* GridView.swift */; };
+		841C63881EB95BF6003C8910 /* Instrumentation ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841C63821EB95BF6003C8910 /* Instrumentation ViewController.swift */; };
+		841C63891EB95BF6003C8910 /* SimulationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841C63831EB95BF6003C8910 /* SimulationViewController.swift */; };
+		841C638A1EB95BF6003C8910 /* StatisticsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841C63841EB95BF6003C8910 /* StatisticsViewController.swift */; };
+		8466FF6D1EBAAD4E00A94E57 /* Fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466FF6C1EBAAD4E00A94E57 /* Fetcher.swift */; };
+		8466FF6F1EBAAE3F00A94E57 /* Configurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466FF6E1EBAAE3F00A94E57 /* Configurations.swift */; };
+		8466FF711EBAC89300A94E57 /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8466FF701EBAC89300A94E57 /* ConfigurationViewController.swift */; };
 		FBAD2E271E2BE417008207C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAD2E261E2BE417008207C0 /* AppDelegate.swift */; };
-		FBAD2E291E2BE417008207C0 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAD2E281E2BE417008207C0 /* FirstViewController.swift */; };
-		FBAD2E2B1E2BE417008207C0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAD2E2A1E2BE417008207C0 /* SecondViewController.swift */; };
-		FBAD2E2E1E2BE417008207C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBAD2E2C1E2BE417008207C0 /* Main.storyboard */; };
-		FBAD2E301E2BE417008207C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBAD2E2F1E2BE417008207C0 /* Assets.xcassets */; };
-		FBAD2E331E2BE417008207C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBAD2E311E2BE417008207C0 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		841C63791EB95B93003C8910 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		841C637B1EB95BBC003C8910 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		841C637D1EB95BCD003C8910 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		841C637F1EB95BF6003C8910 /* Engine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Engine.swift; sourceTree = "<group>"; };
+		841C63801EB95BF6003C8910 /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		841C63811EB95BF6003C8910 /* GridView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		841C63821EB95BF6003C8910 /* Instrumentation ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Instrumentation ViewController.swift"; sourceTree = "<group>"; };
+		841C63831EB95BF6003C8910 /* SimulationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimulationViewController.swift; sourceTree = "<group>"; };
+		841C63841EB95BF6003C8910 /* StatisticsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticsViewController.swift; sourceTree = "<group>"; };
+		8466FF6C1EBAAD4E00A94E57 /* Fetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fetcher.swift; sourceTree = "<group>"; };
+		8466FF6E1EBAAE3F00A94E57 /* Configurations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configurations.swift; sourceTree = "<group>"; };
+		8466FF701EBAC89300A94E57 /* ConfigurationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
 		FBAD2E231E2BE417008207C0 /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBAD2E261E2BE417008207C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FBAD2E281E2BE417008207C0 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		FBAD2E2A1E2BE417008207C0 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		FBAD2E2D1E2BE417008207C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FBAD2E2F1E2BE417008207C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FBAD2E321E2BE417008207C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FBAD2E341E2BE417008207C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -56,12 +70,19 @@
 		FBAD2E251E2BE417008207C0 /* FinalProject */ = {
 			isa = PBXGroup;
 			children = (
+				8466FF6E1EBAAE3F00A94E57 /* Configurations.swift */,
+				841C637F1EB95BF6003C8910 /* Engine.swift */,
+				8466FF6C1EBAAD4E00A94E57 /* Fetcher.swift */,
+				841C63801EB95BF6003C8910 /* Grid.swift */,
+				841C63811EB95BF6003C8910 /* GridView.swift */,
+				8466FF701EBAC89300A94E57 /* ConfigurationViewController.swift */,
+				841C63821EB95BF6003C8910 /* Instrumentation ViewController.swift */,
+				841C63831EB95BF6003C8910 /* SimulationViewController.swift */,
+				841C63841EB95BF6003C8910 /* StatisticsViewController.swift */,
 				FBAD2E261E2BE417008207C0 /* AppDelegate.swift */,
-				FBAD2E281E2BE417008207C0 /* FirstViewController.swift */,
-				FBAD2E2A1E2BE417008207C0 /* SecondViewController.swift */,
-				FBAD2E2C1E2BE417008207C0 /* Main.storyboard */,
-				FBAD2E2F1E2BE417008207C0 /* Assets.xcassets */,
-				FBAD2E311E2BE417008207C0 /* LaunchScreen.storyboard */,
+				841C63791EB95B93003C8910 /* Main.storyboard */,
+				841C637D1EB95BCD003C8910 /* LaunchScreen.storyboard */,
+				841C637B1EB95BBC003C8910 /* Assets.xcassets */,
 				FBAD2E341E2BE417008207C0 /* Info.plist */,
 			);
 			path = FinalProject;
@@ -127,9 +148,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBAD2E331E2BE417008207C0 /* LaunchScreen.storyboard in Resources */,
-				FBAD2E301E2BE417008207C0 /* Assets.xcassets in Resources */,
-				FBAD2E2E1E2BE417008207C0 /* Main.storyboard in Resources */,
+				841C637E1EB95BCD003C8910 /* LaunchScreen.storyboard in Resources */,
+				841C637C1EB95BBC003C8910 /* Assets.xcassets in Resources */,
+				841C637A1EB95B93003C8910 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,32 +161,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBAD2E2B1E2BE417008207C0 /* SecondViewController.swift in Sources */,
+				841C63851EB95BF6003C8910 /* Engine.swift in Sources */,
+				8466FF6D1EBAAD4E00A94E57 /* Fetcher.swift in Sources */,
 				FBAD2E271E2BE417008207C0 /* AppDelegate.swift in Sources */,
-				FBAD2E291E2BE417008207C0 /* FirstViewController.swift in Sources */,
+				8466FF711EBAC89300A94E57 /* ConfigurationViewController.swift in Sources */,
+				841C63861EB95BF6003C8910 /* Grid.swift in Sources */,
+				841C63881EB95BF6003C8910 /* Instrumentation ViewController.swift in Sources */,
+				8466FF6F1EBAAE3F00A94E57 /* Configurations.swift in Sources */,
+				841C63891EB95BF6003C8910 /* SimulationViewController.swift in Sources */,
+				841C638A1EB95BF6003C8910 /* StatisticsViewController.swift in Sources */,
+				841C63871EB95BF6003C8910 /* GridView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		FBAD2E2C1E2BE417008207C0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FBAD2E2D1E2BE417008207C0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FBAD2E311E2BE417008207C0 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FBAD2E321E2BE417008207C0 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FBAD2E351E2BE417008207C0 /* Debug */ = {
@@ -308,6 +317,7 @@
 				FBAD2E391E2BE417008207C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
